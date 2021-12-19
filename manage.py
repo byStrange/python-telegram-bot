@@ -1,9 +1,7 @@
 import telepot
+from pprint import pprint
 
-bot = telepot.Bot('2009593665:AAHHtxHIBv288p_-u6lcTRBmI0IJNFYUEYo')
-print(
-    bot.getChat('1359290361')
-)
-bot.sendAudio(
-    '1359290361', 'file:///C:/Users/stark/desktop/Music%202021/After%20Dark%20(TikTok%20aesthetics).mp3')
-print('Audio send')
+API_TOKEN = '5084415268:AAF07r-9pYvTtQJZ086BOr2r5iZxb8dG5q4 '
+bot = telepot.Bot(API_TOKEN)
+re = bot.getUpdates()
+pprint(re)
